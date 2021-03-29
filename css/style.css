@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zilla Slab', serif;
+  text-align: center;
+}
+
+.container{
+ width: 240px;
+ height: 240px;
+ overflow: hidden;
+ margin: 100px auto;
+ border-radius: 50%;
+ background: linear-gradient(140deg, pink, purple);
+ transition: all 0.5s ease;
+}
+
+.container:hover{
+  height: 470px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.container .wrapper img{
+ position: relative;
+ z-index: 20;
+ border-radius: 50%;
+ display: block;
+ height: 200px;
+ width: 200px;
+ border: 5px solid #fff;
+ object-fit: cover;
+ margin: 20px auto;
+ transition: all 0.5s;
+ cursor:zoom-in; 
+}
+
+
+.container:hover .wrapper img.active{
+ width: 350px;
+ height: 470px;
+ margin: 0 auto;
+ border: none;
+ border-radius: 10px;
+ cursor: zoom-out;
+}
+
+.wrapper .title{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.wrapper .place{
+  color: #fff;
+  font-size: 18px;
+  padding: 1px 20px 10px 20px im !important;
+}
+
+.content{
+  margin: 15px 0;
+}
+
+.content p{
+  font-size: 18px;
+  color: #fff;
+}
+.content .btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.content .btn button{
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius:  5px;
+  background: #fff;
+  margin: 0 5px;
+  font-weight: 500;
+  transition: all 0.3s;
+
+}
+
+.btn button:hover{
+  transform: scale(0.95);
+}
+
+.container .icons{
+ position: relative;
+ margin-top: -445px;
+ margin-left: 10px;
+ transition: all 0.5s;
+}
+
+.container .icons li{
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  line-height: 40px;
+  margin: 5px 0;
+  color: #7b00e0;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: -100px;
+  opacity: 0;
+}
+
+.container:hover .icons li{
+  margin-left: 0px;
+  opacity: 1;
+}
+
+.container .icons li:hover{
+  transform: scale(0.95);
+}
+
+.icons li:nth-child(2){
+  transition-delay: 0.1s;
+}
+
+.icons li:nth-child(3){
+  transition-delay: 0.3s;
+}
